@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #3654b8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+    
+    .login-container {
+        background-color: transparent;
+        border: 3px solid rgba(255, 0, 0, 0.2);
+        backdrop-filter: blur(15px);
+        padding: 20px 40px;
+        border-radius: 50px;
+        text-align: center;
+    }
+    
+    h2 {
+        margin-bottom: 20px;
+        color: #000000;
+    }
+    
+    .input-group {
+        margin-bottom: 15px;
+        text-align: left;
+    }
+    
+    .input-group label {
+        display: block;
+        margin-bottom: 5px;
+        color: #000000;
+    }
+    
+    .input-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+    
+    .input-group input:focus {
+        outline: none;
+        background-color: #007bff;
+    }
+    
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #f80000;
+        color: #ffffff;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #37eeff;
+    }
+    
+    .links {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .links a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .links a:hover {
+        text-decoration: underline;
+    }
+    </style>
+</head>
+<body>
+    <img src="644e1054c09928998c3dec4cb4a28a45.jpg" alt="">
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <form action="#" method="POST">
+            <div class="input-group">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+            </div>
+            <div class="input-group">
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" name="contraseña" required>
+            </div>
+            <button type="submit">Ingresar</button>
+        </form>
+        
+        <div class="links">
+            <a href="#">¿Olvidaste tu contraseña?</a><br>
+            <a href="#">Registrarse</a>
+        </div>
+    </div>
+</body>
+</html>
+
